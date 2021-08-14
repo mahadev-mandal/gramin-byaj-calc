@@ -4,7 +4,7 @@
     $("#interest,#total,#year,#month,#day").css("border","");
     $("#submit").attr('value','CALCULATE');
    });
-   $("#year1").mouseleave(function(){
+   $("#year1").keyup(function(){
     var principle=$("#principle").val();
     var rate=$("#rate").val();
     var year1=$("#year1").val();
@@ -52,7 +52,7 @@
       $("#day1").removeClass("is-invalid");
     }
    });
-   $("#year2").mouseleave(function(){
+   $("#year2").keyup(function(){
     var principle=$("#principle").val();
     var rate=$("#rate").val();
     var year1=$("#year1").val();
